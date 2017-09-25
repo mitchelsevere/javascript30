@@ -57,18 +57,6 @@
       <audio data-key="76" src="sounds/teleport.wav"></audio>
     </main>
 
-    <script>
-      window.addEventListener('keydown', (e) => {
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-        if (!audio) {
-          return;
-        } else {
-          audio.currentTime = 0;
-          audio.play();
-          key.classList.add('playing');
-        }
-      });
-    </script>
+    <script src="./drumkit.js"></script>
   </body>
 </html>
