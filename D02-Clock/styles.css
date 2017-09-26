@@ -1,0 +1,28 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  border: 20px solid #333;
+  padding: 5px;
+  border-radius: 90%;
+  width: 30%;
+  height: 50%;
+  position: relative;
+}
+
+.hand {
+  width: 50%;
+  height: 15px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.1s;
+  transition-timing-function: ease-out;
+}
