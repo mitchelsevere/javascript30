@@ -7,6 +7,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 body {
@@ -20,6 +22,10 @@ body {
 
 input {
   margin: 15px;
+}
+
+label {
+  margin-left: 50px;
 }
 
 #controls {
@@ -95,8 +101,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 input[type="color"] {
 	-webkit-appearance: none;
 	border: none;
-	width: 132px;
-	height: 32px;
+	width: 232px;
+  height: 32px;
+  outline: none;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
