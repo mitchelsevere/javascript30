@@ -20,10 +20,13 @@ const fifteenHundred = inventors.filter(inventor => {
     return true;
   }
 });
-
 console.table(fifteenHundred);
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
+const names = inventors.map(inventor => {
+  return [inventor.first, inventor.last]
+});
+console.table(names);
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 // Array.prototype.reduce()
