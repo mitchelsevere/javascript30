@@ -1,0 +1,82 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+#panels {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  color: #FFF;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: 
+    font-size 0.7s ease-in,
+    flex 0.7s ease-in,
+    background 0.2s ease-in;
+}
+
+.panel p {
+  margin: 0;
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:first-child,
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 2.5rem;
+}
+
+.panel1 {
+  background: url(https://static.pexels.com/photos/378371/pexels-photo-378371.jpeg)
+}
+
+.panel2 {
+  background: url(https://static.pexels.com/photos/359989/pexels-photo-359989.jpeg)
+}
+
+.panel3 {
+  background: url(https://static.pexels.com/photos/236287/pexels-photo-236287.jpeg)
+}
+
+.panel4 {
+  background: url(https://static.pexels.com/photos/205516/pexels-photo-205516.jpeg)
+}
+
+.panel5 {
+  background: url(https://static.pexels.com/photos/7640/pexels-photo.jpg)
+}
+
+
+
+
+
